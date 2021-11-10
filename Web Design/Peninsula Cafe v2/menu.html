@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Menu | Peninsula Café & Restaurant</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Quicksand|ZCOOL+KuaiLe&display=swap');
+		@import url('https://www.w3schools.com/w3css/4/w3.css');
+		@import "stylesheet.css"
+	</style>
+
+</head>
+<body>
+	
+	<!-- Navigation Bar  -->
+	<nav class="navbar w3-top" id="navbar">
+		<div class="w3-row w3-white w3-padding w3-center">
+			<a href="index.html" class="baritem w3-col s3 w3-button w3-round w3-block w3-white w3-hover-khaki">Home</a>
+			<a href="menu.html" class="baritem w3-col s3 w3-button w3-round w3-block w3-white w3-hover-khaki">Menu</a>
+			<a href="about.html" class="baritem w3-col s3 w3-button w3-round w3-block w3-white w3-hover-khaki">About Us</a>
+			<a href="contact.html" class="baritem w3-col s3 w3-button w3-round w3-block w3-white w3-hover-khaki">Contact Us</a>
+		</div>
+		<div class="hrbar w3-yellow w3-center" style="height: 3px;"></div>
+	</nav>
+
+	<!-- Main Content -->
+	<main class="w3-large">
+
+		<div class="filler"></div>
+
+		<div class="menu w3-container section">
+
+			<div class="menu-container w3-container w3-round w3-khaki">
+				<h2 class="w3-center">Menu</h2>
+
+				<div class="menu-items w3-container w3-white w3-round">
+
+					<h3 class="w3-center">Appetizers</h3>
+					<h4>Tequeños</h4><h5>$4.95</h5>
+					<small>Cheese stripes wrapped in dough and then fried</small>
+					<div class="item-separator w3-yellow"></div>
+					<h4>Patacones</h4><h5>$6.95</h5>
+					<small>Plantain slice, flattened and fried twice topped with chicken, beef, or other various ingredients</small>
+					<div class="item-separator w3-yellow"></div>
+					<h4>Pasteles</h4><h5>$5.50</h5>
+					<small>Fried dough filled with chicken, beef, or other various ingredients</small>
+					<div class="item-separator w3-yellow"></div>
+					<h4>Empanadas</h4><h5>$3.50</h5>
+					<small>Fried turnover made of pastry or corn dough, filled with chicken, beef, or other various ingredients</small>
+					<div class="item-separator w3-yellow"></div>
+
+					<h3 class="w3-center">Lunch</h3>
+					<h4>Arepas</h4><h5>$7.95 - $9.50</h5>
+					<small>Round flat dough made of ground maize dough, fried or on the grill, and filled with various meats or other ingredients</small>
+					<div class="item-separator w3-yellow"></div>
+					<h4>Asado Negro</h4><h5>$12.50</h5>
+					<small>Made with eye round roast. Is one of the most traditional dishes of Venezuela. Served with rice, fried plantain and salad</small>
+					<div class="item-separator w3-yellow"></div>
+					<h4>Sopa Mondongo</h4><h5>$9.50</h5>
+					<small>Thick soup made with belly beef and veggies. Accompanied with rice, arepas y queso frito</small>
+					<div class="item-separator w3-yellow"></div>
+					<small class="w3-display-bottom">For catering prices, please submit a quote request</small>
+				</div>
+
+				<div class="menu-pic w3-center">
+					<figure class="menu-dish w3-card-4 w3-white w3-text-black">
+						<img src="images\menupic1.jpg">
+						<figcaption>Patacones</figcaption>
+					</figure>
+					<figure class="menu-dish w3-card-4 w3-white w3-text-black">
+						<img src="images\menupic3.jpg">
+						<figcaption>Empanadas</figcaption>
+					</figure>
+					<figure class="menu-dish w3-card-4 w3-white w3-text-black">
+						<img src="images\menupic4.jfif">
+						<figcaption>Arepas</figcaption>
+					</figure>
+					<figure class="menu-dish w3-card-4 w3-white w3-text-black">
+						<img src="images\menupic2.jfif">
+						<figcaption>Mini Pasteles</figcaption>
+					</figure>
+				</div>
+			</div>
+
+			<div class="form-container w3-khaki w3-round">
+				<h4 class="w3-center">Looking for Catering?</h4>
+				<h4 class="w3-center">Contact Us, Get a Quote!</h4>
+				<form>
+					<p class="form-content">
+						<label>Name</label>
+						<input class="w3-input w3-border" type="text" id="fname" required>
+					</p>
+					<p class="form-content">
+						<label>Phone Number</label>
+						<input class="w3-input w3-border" type="tel" id="phone" required  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+						<small><b>*</b>Format: 123-456-7890</small>
+					</p>
+					<p class="form-content">
+						<label>City</label>
+						<input class="w3-input w3-border" type="text" id="city" required>
+					</p>
+					<p class="form-content">
+						<label>Email</label>
+						<input class="w3-input w3-border" type="email" id="email" required>
+					</p>
+					<p class="form-content">
+						<label>Party Size</label>
+						<input class="w3-input w3-border" type="number" min="8" max="50" id="party" required>
+						<small><b>*</b>Party must be between 8 - 50 people</small>
+					</p>
+					<p class="form-content">
+						<label>Date of event</label>
+						<input class="w3-input w3-border" type="date" id="datepicker" required min="2019-01-01" max="2022-01-01" id="date">
+					</p>
+					<p class="w3-center"><button class="w3-btn w3-white" onclick="SendQuote()">Get Qoute!</button></p>
+				</form>
+			</div>
+		</div>
+
+		<div class="hrbar w3-yellow" style="height: 3px"></div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer1 w3-center">
+				<h4>Hours of Operation:</h4>
+				<p>Monday - Thursday:		12:30 p.m. - 9:30 p.m.</p>
+				<p>Friday - Sunday: 		12:00 p.m. - 7 p.m.</p>
+			</div>
+			<div class="footer1 w3-center">
+				<h5>Contact Us</h5>
+				<p>268 W Broadway Street, Boston MA, 02127</p>
+				<p>Tel: (857) 555-9876</p>
+			</div>
+			<div class="footer1 w3-center">
+				<h5>Catering</h5>
+				<p>Tel: (617) 555-1234</p>
+			</div>
+			<div class="footer1 w3-center">
+				<h5>Designed by:</h5>
+				<p class="w3-tag">Photo R Studios, Inc.</p>
+			</div>
+		</footer>
+
+		<script>
+			var date = new Date();
+			var year = date.getFullYear();
+			var month = date.getMonth()+1;
+			var day = date.getDate();
+			var newdate = new Date();
+			if(day<10){
+			        day='0'+day
+			    } 
+			    if(month<10){
+			        month='0'+month
+			    } 
+
+			var newDate = year+'-'+month+'-'+day;
+			document.getElementById("datepicker").min = newDate;
+		</script>
+
+	</main>
+
+	<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Contact Us | Peninsula Café & Restaurant</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Quicksand|ZCOOL+KuaiLe&display=swap');
+		@import url('https://www.w3schools.com/w3css/4/w3.css');
+		@import "stylesheet.css"
+	</style>
+
+</head>
+<body>
+	
+	<!-- navigation bar  -->
+	<nav class="navbar w3-top" id="navbar">
+		<div class="w3-row w3-white w3-padding w3-center">
+			<a href="index.html" class="baritem w3-col s3 w3-button w3-round w3-block w3-white w3-hover-khaki">Home</a>
+			<a href="menu.html" class="baritem w3-col s3 w3-button w3-round w3-block w3-white w3-hover-khaki">Menu</a>
+			<a href="about.html" class="baritem w3-col s3 w3-button w3-round w3-block w3-white w3-hover-khaki">About Us</a>
+			<a href="contact.html" class="baritem w3-col s3 w3-button w3-round w3-block w3-white w3-hover-khaki">Contact Us</a>
+		</div>
+		<div class="hrbar w3-yellow" style="height: 3px;"></div>	
+	</nav>
+
+	<!-- main content -->
+	<main class="w3-large">
+
+		<div class="filler w3-container"></div>
+
+		<section class="section w3-container" style="margin-bottom: 4rem;">
+
+			<div class="w3-container section w3-khaki w3-round" style="max-width: 400px;margin-left: 17rem;">
+				<h3 class="w3-center">Have a Question?</h3>
+				<p class="w3-center form-content">Fill out this form and we'll reach out to you as soon as we can</p>
+
+				<form name="contactform" action="#" onsubmit="Submit()">
+					<p class="form-content">
+						<label><strong>First Name:</strong></label>
+						<input class="w3-input w3-border" type="text" name="fname" autofocus required>
+					</p>
+					<p class="form-content">      
+						<label><strong>Last Name:</strong></label>
+						<input class="w3-input w3-border" type="text" name="lname" required>
+					</p>
+					<p class="form-content">
+						<label><strong>Describe your question(s):</strong></label>
+						<textarea class="w3-input w3-border" maxlength="200" name="textarea" required placeholder="Send us your question(s)..."></textarea>
+					</p>
+					<p class="w3-center"><button class="w3-btn w3-white" type="submit" name="submit" value="submit">Register</button></p>
+				</form>
+			</div>
+			
+		</section>
+
+		<div class="hrbar w3-yellow" style="height: 3px"></div>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer1 w3-center">
+				<h4>Hours of Operation:</h4>
+				<p>Monday - Thursday:		12:30 p.m. - 9:30 p.m.</p>
+				<p>Friday - Sunday: 		12:00 p.m. - 7 p.m.</p>
+			</div>
+			<div class="footer1 w3-center">
+				<h5>Contact Us</h5>
+				<p>268 W Broadway Street, Boston MA, 02127</p>
+				<p>Tel: (857) 555-9876</p>
+			</div>
+			<div class="footer1 w3-center">
+				<h5>Catering</h5>
+				<p>Tel: (617) 555-1234</p>
+			</div>
+			<div class="footer1 w3-center">
+				<h5>Designed by:</h5>
+				<p class="w3-tag">Photo R Studios, Inc.</p>
+			</div>
+		</footer>
+	</main>
+
+	<script src="script.js"></script>
+
+</body>
+</html>

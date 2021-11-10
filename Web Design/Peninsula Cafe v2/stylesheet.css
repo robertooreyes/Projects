@@ -1,0 +1,111 @@
+/** Scroll bar style **/
+::-webkit-scrollbar {
+width: 10px;
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+body, html {
+	zoom: 95%;
+	height: 100%;
+	font-family: "Quicksand", sans-serif;
+}
+.title {
+font-size: 7rem;
+text-shadow: 2px 2px black;
+font-family: "ZCOOL KuaiLe", cursive;
+}
+.background-image {
+background-position: center;
+background-size: cover;
+background-image: url("images/banner.jpeg");
+min-height: 82%;
+}
+.hrbar {
+height: .3rem;
+}
+.section {
+margin: auto;
+max-width: 1000px;
+}
+.gallery {
+max-width: 90%;
+}
+.dish {
+max-width: 300px;
+max-height: 300px;
+float: left;
+margin-left: 5rem;
+}
+.footer {
+max-height: 10rem;
+}
+.footer p {
+font-size: 1rem;
+}
+.footer1 {
+width: 300px;
+float: left;
+margin: 0 2rem 0 2rem;
+}
+.footer2 {
+width:300px;
+float: right;
+margin-right: 0 2rem 0 2rem;
+}
+.filler {
+	height: 5rem;
+}
+form .w3-input {
+	max-width: 600px;
+}
+form input {
+	text-transform: capitalize;
+}
+#date, #email {
+	text-transform: none;
+}
+.menu {
+	max-width:1400px;
+	padding: 2rem 1rem 2rem 1rem;
+}
+.menu-container {
+	width: 950px;
+	height: 73rem;
+	float: left;
+}
+.menu-items {
+	width: 70%;
+	float: left;
+}
+.menu-items h4 {
+	margin-bottom: -.5rem;
+}
+.menu-dish {
+	width: 200px;
+}
+.item-separator {
+	height: 2px;
+	margin-bottom: 1rem;
+}
+.menu-pic {
+	width: 30%;
+	float: right;
+
+}
+.form-container {
+	width: 400px;
+	height: 47rem;
+	float: right;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.slogan {
+	margin-top: -1rem;
+}
